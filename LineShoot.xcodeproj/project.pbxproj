@@ -18,6 +18,9 @@
 		17DD9BA81DAC930300EE087F /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DD9BA71DAC930300EE087F /* GameController.swift */; };
 		17DD9BAA1DAC9F9600EE087F /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DD9BA91DAC9F9600EE087F /* GameOverViewController.swift */; };
 		17DD9BAC1DADBEFE00EE087F /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DD9BAB1DADBEFE00EE087F /* LandingViewController.swift */; };
+		17E354EA1DC06113005F83C4 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E354E81DC06113005F83C4 /* Fabric.framework */; };
+		17E354EB1DC06113005F83C4 /* GameAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E354E91DC06113005F83C4 /* GameAnalytics.framework */; };
+		17E354ED1DC063AF005F83C4 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E354EC1DC063AF005F83C4 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		17DD9BA71DAC930300EE087F /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		17DD9BA91DAC9F9600EE087F /* GameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		17DD9BAB1DADBEFE00EE087F /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		17E354E81DC06113005F83C4 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		17E354E91DC06113005F83C4 /* GameAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GameAnalytics.framework; sourceTree = "<group>"; };
+		17E354EC1DC063AF005F83C4 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E354EA1DC06113005F83C4 /* Fabric.framework in Frameworks */,
+				17E354ED1DC063AF005F83C4 /* Crashlytics.framework in Frameworks */,
+				17E354EB1DC06113005F83C4 /* GameAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +98,9 @@
 				170140B41D985AFE006CBEE5 /* LineShootTests */,
 				170140BF1D985AFE006CBEE5 /* LineShootUITests */,
 				1701409A1D985AFE006CBEE5 /* Products */,
+				17E354EC1DC063AF005F83C4 /* Crashlytics.framework */,
+				17E354E81DC06113005F83C4 /* Fabric.framework */,
+				17E354E91DC06113005F83C4 /* GameAnalytics.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +159,7 @@
 				170140951D985AFE006CBEE5 /* Sources */,
 				170140961D985AFE006CBEE5 /* Frameworks */,
 				170140971D985AFE006CBEE5 /* Resources */,
+				17E354E71DC060F3005F83C4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -264,6 +277,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17E354E71DC060F3005F83C4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 7189842e0edc1f648a6e6e3c52978493bb12c759 3ce1a95baf59d87848375aad6dd8f274a073626fa720daacd2a771583b1b1f76";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		170140951D985AFE006CBEE5 /* Sources */ = {
@@ -403,6 +432,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L693HRC9HY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LineShoot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FMTech.LineShoot;
@@ -416,6 +449,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L693HRC9HY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LineShoot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FMTech.LineShoot;
