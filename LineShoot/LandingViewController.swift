@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import GameAnalytics
+import Crashlytics
 
 let kPlayButtonSize = CGSize(width: 110.0, height: 90.0)
 let kHighScoreLabelHeight: CGFloat = 50.0
@@ -50,6 +52,9 @@ class LandingViewController: UIViewController
 
     func didTapPlayButton(sender: UIButton) {
         let gameVC = GameViewController(frame: view.frame)
+
+        GameAnalytics.addProgressionEvent(with: GAProgressionStatusStart, progression01:"game", progression02:"landing", progression03:"play-button")
+
         self.present(gameVC, animated: false, completion: nil)
     }
 
