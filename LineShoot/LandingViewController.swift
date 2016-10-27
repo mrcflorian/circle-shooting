@@ -17,6 +17,9 @@ let kPlayButtonFontFamily = "MarkerFelt-Wide"
 let kPlayButtonFontSize: CGFloat = 30
 
 let kHighScoreLabelHeight: CGFloat = 50.0
+let kHighScoreLabelFontSize: CGFloat = 14
+let kHishScoreLabelFontFamily = "Marion-Bold"
+let kHishScoreLabelRightMargin: CGFloat = 20
 let kSceneViewPadding: CGFloat = 80.0
 
 class LandingViewController: UIViewController
@@ -44,6 +47,8 @@ class LandingViewController: UIViewController
         self.playButton.layer.shadowOffset = CGSize(width: 0, height: 3)
 
         highScoreLabel.textColor = UIColor.red
+        highScoreLabel.font = UIFont(name: kHishScoreLabelFontFamily, size: kHighScoreLabelFontSize)
+        highScoreLabel.textAlignment = NSTextAlignment.right
 
         sceneView.backgroundColor = UIColor.clear
     }
@@ -69,7 +74,7 @@ class LandingViewController: UIViewController
         super.viewWillLayoutSubviews()
         playButton.frame = CGRect(x: self.view.bounds.midX - kPlayButtonSize.width / 2, y: self.view.bounds.midY - kPlayButtonSize.height, width: kPlayButtonSize.width, height: kPlayButtonSize.height)
 
-        highScoreLabel.frame = CGRect(x: 0.0, y: 0.0, width: self.view.bounds.width, height: kHighScoreLabelHeight)
+        highScoreLabel.frame = CGRect(x: 0.0, y: 0.0, width: self.view.bounds.width - kHishScoreLabelRightMargin, height: kHighScoreLabelHeight)
         let playBtnFrame = playButton.frame
         sceneView.frame = CGRect(x: playBtnFrame.minX - kSceneViewPadding, y: playBtnFrame.minY - kSceneViewPadding, width: playBtnFrame.width + 2 * kSceneViewPadding, height: playBtnFrame.height + 2 * kSceneViewPadding)
         scene.size = sceneView.frame.size
@@ -91,7 +96,7 @@ class LandingViewController: UIViewController
     private func updateHighScoreTextLabelIfNeeded() {
         let score = highScoreManager.currentHighScore()
         if (score > 0) {
-            highScoreLabel.text = "Your best score: " + String(Int(score))
+            highScoreLabel.text = "Best score: " + String(Int(score))
         } else {
             highScoreLabel.text = ""
         }

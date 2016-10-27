@@ -14,11 +14,10 @@ let kProjectileLauncherRadius: CGFloat = 5.0
 let kProjectileSpeedDuration: TimeInterval = 1.0
 
 // Colors
-let kProjectileColor: UIColor = UIColor.blue
-let kProjectileLauncherColor: UIColor = UIColor.blue
+let kProjectileColor: UIColor = UIColor(white: 0.9, alpha: 0.5)
+let kProjectileLauncherColor: UIColor = UIColor(white: 0.9, alpha: 0.5)
 let kMonsterColor: UIColor = UIColor.red
-let kTrackColor: UIColor = UIColor.black
-
+let kTrackColor: UIColor = UIColor(white: 0.9, alpha: 0.5)
 
 struct PhysicsCategory {
     static let None      : UInt32 = 0

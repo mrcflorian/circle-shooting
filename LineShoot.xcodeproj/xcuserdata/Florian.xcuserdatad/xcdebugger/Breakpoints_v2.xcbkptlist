@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LineShoot/GameViewController.swift"
-            timestampString = "498120042.895137"
+            timestampString = "499289276.324902"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "gameOver()"
             landmarkType = "7">
          </BreakpointContent>

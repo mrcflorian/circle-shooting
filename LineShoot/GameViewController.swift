@@ -56,6 +56,7 @@ class GameViewController: UIViewController {
 
     override func loadView() {
         self.view = SKView(frame: frame)
+        self.view.backgroundColor = UIColor.black
     }
 
     func startGame() {
@@ -63,6 +64,7 @@ class GameViewController: UIViewController {
         let skView = view as! SKView
         scene = GameScene(size: skView.bounds.size)
         scene?.scaleMode = .aspectFit
+        scene?.backgroundColor = UIColor.black
         scene?.viewController = self
 
         // Present the scene.

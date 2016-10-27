@@ -23,7 +23,7 @@ class LandingGameScene: SKScene {
         scaleMode = .aspectFit
 
         track = SKShapeNode(circleOfRadius: kTrackRadius)
-        track.strokeColor = UIColor.white
+        track.strokeColor = UIColor(white: 0.9, alpha: 0.5)
         track.glowWidth = 1.0
         track.lineWidth = 2
         track.fillColor = UIColor.clear
