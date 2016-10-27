@@ -16,18 +16,19 @@ let kPlayButtonCornerRadius: CGFloat = 30
 let kPlayButtonFontFamily = "MarkerFelt-Wide"
 let kPlayButtonFontSize: CGFloat = 30
 
-let kHighScoreLabelHeight: CGFloat = 50.0
-let kHighScoreLabelFontSize: CGFloat = 14
-let kHishScoreLabelFontFamily = "Marion-Bold"
-let kHishScoreLabelRightMargin: CGFloat = 20
+let kScoreLabelHeight: CGFloat = 18.0
+let kScoreLabelFontSize: CGFloat = 14
+let kScoreLabelFontFamily = "Marion-Bold"
+let kScoreLabelRightMargin: CGFloat = 20
 let kSceneViewPadding: CGFloat = 80.0
 
 class LandingViewController: UIViewController
 {
-    let highScoreManager = HighScoreManager(userDefaults: UserDefaults.standard)
+    let scoreManager = ScoreManager(userDefaults: UserDefaults.standard)
 
     let playButton = UIButton(type: UIButtonType.system)
     let highScoreLabel = UILabel()
+    let lastScoreLabel = UILabel()
     let sceneView = SKView()
 
     let scene = LandingGameScene()
@@ -47,15 +48,19 @@ class LandingViewController: UIViewController
         self.playButton.layer.shadowOffset = CGSize(width: 0, height: 3)
 
         highScoreLabel.textColor = UIColor.red
-        highScoreLabel.font = UIFont(name: kHishScoreLabelFontFamily, size: kHighScoreLabelFontSize)
+        highScoreLabel.font = UIFont(name: kScoreLabelFontFamily, size: kScoreLabelFontSize)
         highScoreLabel.textAlignment = NSTextAlignment.right
+
+        lastScoreLabel.textColor = UIColor.red
+        lastScoreLabel.font = UIFont(name: kScoreLabelFontFamily, size: kScoreLabelFontSize)
+        lastScoreLabel.textAlignment = NSTextAlignment.right
 
         sceneView.backgroundColor = UIColor.clear
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        updateHighScoreTextLabelIfNeeded()
+        updateScoreTextLabelsIfNeeded()
     }
 
     override var prefersStatusBarHidden: Bool {
@@ -66,6 +71,7 @@ class LandingViewController: UIViewController
         super.viewDidLoad()
         self.view.addSubview(playButton)
         self.view.addSubview(highScoreLabel)
+        self.view.addSubview(lastScoreLabel)
         self.view.insertSubview(sceneView, belowSubview: playButton)
         sceneView.presentScene(scene)
     }
@@ -74,7 +80,8 @@ class LandingViewController: UIViewController
         super.viewWillLayoutSubviews()
         playButton.frame = CGRect(x: self.view.bounds.midX - kPlayButtonSize.width / 2, y: self.view.bounds.midY - kPlayButtonSize.height, width: kPlayButtonSize.width, height: kPlayButtonSize.height)
 
-        highScoreLabel.frame = CGRect(x: 0.0, y: 0.0, width: self.view.bounds.width - kHishScoreLabelRightMargin, height: kHighScoreLabelHeight)
+        lastScoreLabel.frame = CGRect(x: 0.0, y: 0.0, width: self.view.bounds.width - kScoreLabelRightMargin, height: kScoreLabelHeight)
+        highScoreLabel.frame = CGRect(x: lastScoreLabel.frame.minX, y: lastScoreLabel.frame.maxY, width: lastScoreLabel.frame.width, height: lastScoreLabel.frame.height)
         let playBtnFrame = playButton.frame
         sceneView.frame = CGRect(x: playBtnFrame.minX - kSceneViewPadding, y: playBtnFrame.minY - kSceneViewPadding, width: playBtnFrame.width + 2 * kSceneViewPadding, height: playBtnFrame.height + 2 * kSceneViewPadding)
         scene.size = sceneView.frame.size
@@ -93,12 +100,17 @@ class LandingViewController: UIViewController
         fatalError("init(coder:) has not been implemented")
     }
 
-    private func updateHighScoreTextLabelIfNeeded() {
-        let score = highScoreManager.currentHighScore()
-        if (score > 0) {
-            highScoreLabel.text = "Best score: " + String(Int(score))
+    private func updateScoreTextLabelsIfNeeded() {
+        let highScore = scoreManager.currentHighScore()
+        if (highScore > 0) {
+            highScoreLabel.text = "Best score: " + String(Int(highScore))
         } else {
             highScoreLabel.text = ""
+        }
+        if let lastScore = scoreManager.currentLastScore() {
+            lastScoreLabel.text = "Last score: " + String(Int(lastScore))
+        } else {
+            lastScoreLabel.text = ""
         }
     }
 }

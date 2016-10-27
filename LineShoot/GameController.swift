@@ -9,13 +9,19 @@
 import Foundation
 import UIKit
 
-class GameController: NSObject {
+class GameController {
     var game: Game = Game()
-    var highScoreManager: HighScoreManager = HighScoreManager(userDefaults: UserDefaults.standard)
+    var scoreManager: ScoreManager = ScoreManager(userDefaults: UserDefaults.standard)
+
+    init() {
+        scoreManager.updateLastScore(score: 0.0)
+    }
 
     internal func increaseLevel() {
         game.incrementLevel()
-        highScoreManager.updateHighScoreIfNecessary(score: Double(game.level - 1))
+        let score = Double(game.level - 1)
+        scoreManager.updateHighScoreIfNecessary(score: score)
+        scoreManager.updateLastScore(score: score)
     }
 
     internal func monsterRadius() -> CGFloat {

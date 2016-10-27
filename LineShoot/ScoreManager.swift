@@ -1,5 +1,5 @@
 //
-//  HighScoreManager.swift
+//  ScoreManager.swift
 //  LineShoot
 //
 //  Created by Florian Marcu on 10/20/16.
@@ -10,8 +10,9 @@ import UIKit
 import Foundation
 
 private let kHighScoreStoringKey = "kHighScoreStoringKey"
+private let kLastScoreStoringKey = "kLastScoreStoringKey"
 
-class HighScoreManager {
+class ScoreManager {
 
     var userDefaults: UserDefaults!
 
@@ -31,6 +32,17 @@ class HighScoreManager {
             return userDefaults.double(forKey: kHighScoreStoringKey)
         }
         return 0.0
+    }
+
+    func currentLastScore() -> Double? {
+        if userDefaults.object(forKey: kLastScoreStoringKey) != nil {
+            return userDefaults.double(forKey: kLastScoreStoringKey)
+        }
+        return nil
+    }
+
+    func updateLastScore(score: Double) {
+        userDefaults.set(score, forKey: kLastScoreStoringKey)
     }
 
     private func updateHighScore(score: Double) {

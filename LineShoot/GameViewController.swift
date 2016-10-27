@@ -16,7 +16,7 @@ class GameViewController: UIViewController {
 
     var scene: GameScene?
     var frame: CGRect
-    var scoreView: UILabel?
+    var scoreView: UILabel!
 
     init(frame: CGRect) {
         self.frame = frame
@@ -30,11 +30,12 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let scoreFrame = CGRect(x:kScoreViewPadding, y:kScoreViewPadding, width:kScoreViewDimension, height:kScoreViewDimension)
+        let scoreFrame = CGRect(x: kScoreViewPadding, y: kScoreViewPadding, width: kScoreViewDimension, height: kScoreViewDimension)
         scoreView = UILabel(frame: scoreFrame)
-        scoreView?.backgroundColor = UIColor.clear
-        scoreView?.textColor = UIColor.red
-        scoreView?.font = UIFont(name: "Chalkduster", size: 20)
+        scoreView.backgroundColor = UIColor.clear
+        scoreView.textColor = UIColor.red
+        scoreView.font = UIFont(name: "Chalkduster", size: 50)
+        scoreView.text = "0"
         self.view.addSubview(scoreView!);
 
         // Configure the game view.
