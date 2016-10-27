@@ -90,9 +90,7 @@ class LandingViewController: UIViewController
 
     func didTapPlayButton(sender: UIButton) {
         let gameVC = GameViewController(frame: view.frame)
-
-        GameAnalytics.addProgressionEvent(with: GAProgressionStatusStart, progression01:"game", progression02:"landing", progression03:"play-button")
-
+        GameAnalytics.addDesignEvent(withEventId: "landing:play-button:click")
         self.present(gameVC, animated: false, completion: nil)
     }
 

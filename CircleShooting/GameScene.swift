@@ -7,6 +7,7 @@
 //
 
 import SpriteKit
+import GameAnalytics
 
 let kBigCircleRadius: CGFloat = 100.0
 let kProjectileRadius: CGFloat = 5.0
@@ -58,6 +59,8 @@ class GameScene: SKScene {
 
     override func update(_ currentTime: TimeInterval) {
         if (projectileMiss()) {
+            GameAnalytics.addDesignEvent(withEventId: "game:projectile:miss")
+            GameAnalytics.addDesignEvent(withEventId: "game:projectile:miss:score", value: Int(gameController!.getScore()) as NSNumber!)
             viewController?.gameOver()
         }
     }
@@ -110,6 +113,8 @@ class GameScene: SKScene {
         if (projectile != nil) {
             return
         }
+        GameAnalytics.addDesignEvent(withEventId: "game:projectile:launch")
+
         projectile = SKShapeNode(circleOfRadius: kProjectileRadius)
         projectile?.position = midScreenPoint()
         projectile?.fillColor = kProjectileColor
@@ -158,6 +163,7 @@ extension GameScene: SKPhysicsContactDelegate {
     }
 
     private func projectileDidCollideWithMonster(projectile: SKShapeNode, monster: SKShapeNode) {
+        GameAnalytics.addDesignEvent(withEventId: "game:projectile:hit")
         projectile.removeFromParent()
         monster.removeFromParent()
         self.projectile = nil

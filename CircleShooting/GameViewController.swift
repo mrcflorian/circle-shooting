@@ -8,6 +8,7 @@
 
 import UIKit
 import SpriteKit
+import GameAnalytics
 
 private let kScoreViewDimension: CGFloat = 50.0;
 private let kScoreViewPadding: CGFloat = 20.0;
@@ -52,6 +53,7 @@ class GameViewController: UIViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        GameAnalytics.addDesignEvent(withEventId: "game:screen:touch")
         scene?.launchProjectileIfPossible()
     }
 
