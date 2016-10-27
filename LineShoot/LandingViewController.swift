@@ -11,10 +11,13 @@ import SpriteKit
 import GameAnalytics
 import Crashlytics
 
-let kPlayButtonSize = CGSize(width: 110.0, height: 90.0)
+let kPlayButtonSize = CGSize(width: 60.0, height: 60.0)
+let kPlayButtonCornerRadius: CGFloat = 30
+let kPlayButtonFontFamily = "MarkerFelt-Wide"
+let kPlayButtonFontSize: CGFloat = 30
+
 let kHighScoreLabelHeight: CGFloat = 50.0
-let kSceneViewPadding: CGFloat = 60.0
-let kTrackRadius: CGFloat = 90.0
+let kSceneViewPadding: CGFloat = 80.0
 
 class LandingViewController: UIViewController
 {
@@ -23,26 +26,26 @@ class LandingViewController: UIViewController
     let playButton = UIButton(type: UIButtonType.system)
     let highScoreLabel = UILabel()
     let sceneView = SKView()
-    let scene = SKScene()
 
-    var track: SKShapeNode!
-    var monster: SKShapeNode!
+    let scene = LandingGameScene()
 
     init() {
         super.init(nibName: nil, bundle: nil)
-        playButton.setTitle("Play", for: UIControlState.normal)
+        playButton.setTitle("Go!", for: UIControlState.normal)
         playButton.setTitleColor(UIColor.white, for: UIControlState.normal)
         playButton.backgroundColor = UIColor.red
-        playButton.titleLabel?.font = UIFont(name: "Chalkduster", size: 40)
-        playButton.layer.cornerRadius = 50
+        playButton.titleLabel?.font = UIFont(name: kPlayButtonFontFamily, size: kPlayButtonFontSize)
+        playButton.layer.cornerRadius = kPlayButtonCornerRadius
         playButton.addTarget(self, action:#selector(didTapPlayButton), for: .touchUpInside)
 
-        scene.scaleMode = .aspectFit
+        self.playButton.layer.shadowColor = UIColor(colorLiteralRed: 100.0/255.0, green: 0, blue: 0, alpha: 1).cgColor
+        self.playButton.layer.shadowOpacity = 1.0
+        self.playButton.layer.shadowRadius = 1.0
+        self.playButton.layer.shadowOffset = CGSize(width: 0, height: 3)
 
         highScoreLabel.textColor = UIColor.red
 
         sceneView.backgroundColor = UIColor.clear
-        scene.backgroundColor = UIColor.clear
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -59,7 +62,7 @@ class LandingViewController: UIViewController
         self.view.addSubview(playButton)
         self.view.addSubview(highScoreLabel)
         self.view.insertSubview(sceneView, belowSubview: playButton)
-        drawScene()
+        sceneView.presentScene(scene)
     }
 
     override func viewWillLayoutSubviews() {
@@ -70,17 +73,7 @@ class LandingViewController: UIViewController
         let playBtnFrame = playButton.frame
         sceneView.frame = CGRect(x: playBtnFrame.minX - kSceneViewPadding, y: playBtnFrame.minY - kSceneViewPadding, width: playBtnFrame.width + 2 * kSceneViewPadding, height: playBtnFrame.height + 2 * kSceneViewPadding)
         scene.size = sceneView.frame.size
-
-        let sceneElementsOrigin = CGPoint(x: scene.size.width / 2, y: scene.size.height / 2);
-        track.position = sceneElementsOrigin
-
-
-        let circleP = CGMutablePath()
-        circleP.addArc(center: sceneElementsOrigin, radius: kTrackRadius,
-                       startAngle: 2 * CGFloat(M_PI), endAngle: 0, clockwise: true)
-        circleP.closeSubpath();
-        let circularMove = SKAction.follow(circleP, asOffset: false, orientToPath: true, duration: 2.0)
-        monster.run(SKAction.repeatForever(circularMove))
+        scene.updatePosition()
     }
 
     func didTapPlayButton(sender: UIButton) {
@@ -102,24 +95,5 @@ class LandingViewController: UIViewController
         } else {
             highScoreLabel.text = ""
         }
-    }
-
-    private func drawScene() {
-        track = SKShapeNode(circleOfRadius: kTrackRadius)
-        track.strokeColor = UIColor.white
-        track.glowWidth = 1.0
-        track.lineWidth = 2
-        track.fillColor = UIColor.clear
-        track.zPosition = 0
-        scene.addChild(track)
-
-        monster = SKShapeNode(circleOfRadius: 15)
-        monster.fillColor = UIColor.red
-        monster.strokeColor = UIColor.red
-        monster.zPosition = 10
-
-        scene.addChild(monster!)
-
-        sceneView.presentScene(scene)
     }
 }

@@ -13,6 +13,7 @@
 		170140A81D985AFE006CBEE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 170140A71D985AFE006CBEE5 /* Assets.xcassets */; };
 		170140B61D985AFE006CBEE5 /* LineShootTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170140B51D985AFE006CBEE5 /* LineShootTests.swift */; };
 		170140C11D985AFE006CBEE5 /* LineShootUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170140C01D985AFE006CBEE5 /* LineShootUITests.swift */; };
+		1716D1701DC2857D00571B9A /* LandingGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716D16F1DC2857D00571B9A /* LandingGameScene.swift */; };
 		17A0E24A1DB9790300F389D7 /* HighScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A0E2491DB9790300F389D7 /* HighScoreManager.swift */; };
 		17DD9BA61DAC927C00EE087F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DD9BA51DAC927C00EE087F /* Game.swift */; };
 		17DD9BA81DAC930300EE087F /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DD9BA71DAC930300EE087F /* GameController.swift */; };
@@ -53,6 +54,7 @@
 		170140BC1D985AFE006CBEE5 /* LineShootUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LineShootUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		170140C01D985AFE006CBEE5 /* LineShootUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineShootUITests.swift; sourceTree = "<group>"; };
 		170140C21D985AFE006CBEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1716D16F1DC2857D00571B9A /* LandingGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingGameScene.swift; sourceTree = "<group>"; };
 		17A0E2491DB9790300F389D7 /* HighScoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreManager.swift; sourceTree = "<group>"; };
 		17DD9BA51DAC927C00EE087F /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		17DD9BA71DAC930300EE087F /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				17DD9BA91DAC9F9600EE087F /* GameOverViewController.swift */,
 				17DD9BAB1DADBEFE00EE087F /* LandingViewController.swift */,
 				17A0E2491DB9790300F389D7 /* HighScoreManager.swift */,
+				1716D16F1DC2857D00571B9A /* LandingGameScene.swift */,
 			);
 			path = LineShoot;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				17DD9BAC1DADBEFE00EE087F /* LandingViewController.swift in Sources */,
 				17DD9BA81DAC930300EE087F /* GameController.swift in Sources */,
 				17DD9BAA1DAC9F9600EE087F /* GameOverViewController.swift in Sources */,
+				1716D1701DC2857D00571B9A /* LandingGameScene.swift in Sources */,
 				170140A31D985AFE006CBEE5 /* GameViewController.swift in Sources */,
 				1701409D1D985AFE006CBEE5 /* AppDelegate.swift in Sources */,
 				17DD9BA61DAC927C00EE087F /* Game.swift in Sources */,
