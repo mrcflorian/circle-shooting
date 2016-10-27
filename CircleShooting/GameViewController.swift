@@ -30,7 +30,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let scoreFrame = CGRect(x: kScoreViewPadding, y: kScoreViewPadding, width: kScoreViewDimension, height: kScoreViewDimension)
+        let scoreFrame = CGRect(x: kScoreViewPadding, y: kScoreViewPadding, width: self.view.bounds.width - kScoreViewPadding, height: kScoreViewDimension)
         scoreView = UILabel(frame: scoreFrame)
         scoreView.backgroundColor = UIColor.clear
         scoreView.textColor = UIColor.red

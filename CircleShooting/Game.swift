@@ -31,7 +31,7 @@ struct Game {
 
     private func generateMonsterDuration() -> TimeInterval {
         let x = TimeInterval(Int(kInitialMonsterDuration * 5) - self.level) / 4
-        return max(x + Game.generateRandomSmallDouble(), 0.3)
+        return max(x + Game.generateRandomSmallDouble(), 0.8)
     }
 
     private static func generateRandomDoubleBetween(x: Double, y: Double) -> Double {
