@@ -1,6 +1,6 @@
 //
 //  ScoreManager.swift
-//  LineShoot
+//  CircleShooting
 //
 //  Created by Florian Marcu on 10/20/16.
 //  Copyright © 2016 Florian Marcu. All rights reserved.

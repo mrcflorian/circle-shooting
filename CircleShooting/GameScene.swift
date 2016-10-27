@@ -1,6 +1,6 @@
 //
 //  GameScene.swift
-//  LineShoot
+//  CircleShooting
 //
 //  Created by Florian Marcu on 9/25/16.
 //  Copyright (c) 2016 Florian Marcu. All rights reserved.

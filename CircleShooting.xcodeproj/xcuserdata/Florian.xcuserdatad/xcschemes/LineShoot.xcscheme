@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "170140981D985AFE006CBEE5"
-               BuildableName = "LineShoot.app"
-               BlueprintName = "LineShoot"
-               ReferencedContainer = "container:LineShoot.xcodeproj">
+               BuildableName = "CircleShooting.app"
+               BlueprintName = "CircleShooting"
+               ReferencedContainer = "container:CircleShooting.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "170140B01D985AFE006CBEE5"
-               BuildableName = "LineShootTests.xctest"
-               BlueprintName = "LineShootTests"
-               ReferencedContainer = "container:LineShoot.xcodeproj">
+               BuildableName = "CircleShootingTests.xctest"
+               BlueprintName = "CircleShootingTests"
+               ReferencedContainer = "container:CircleShooting.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "170140BB1D985AFE006CBEE5"
-               BuildableName = "LineShootUITests.xctest"
-               BlueprintName = "LineShootUITests"
-               ReferencedContainer = "container:LineShoot.xcodeproj">
+               BuildableName = "CircleShootingUITests.xctest"
+               BlueprintName = "CircleShootingUITests"
+               ReferencedContainer = "container:CircleShooting.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "170140981D985AFE006CBEE5"
-            BuildableName = "LineShoot.app"
-            BlueprintName = "LineShoot"
-            ReferencedContainer = "container:LineShoot.xcodeproj">
+            BuildableName = "CircleShooting.app"
+            BlueprintName = "CircleShooting"
+            ReferencedContainer = "container:CircleShooting.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "170140981D985AFE006CBEE5"
-            BuildableName = "LineShoot.app"
-            BlueprintName = "LineShoot"
-            ReferencedContainer = "container:LineShoot.xcodeproj">
+            BuildableName = "CircleShooting.app"
+            BlueprintName = "CircleShooting"
+            ReferencedContainer = "container:CircleShooting.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "170140981D985AFE006CBEE5"
-            BuildableName = "LineShoot.app"
-            BlueprintName = "LineShoot"
-            ReferencedContainer = "container:LineShoot.xcodeproj">
+            BuildableName = "CircleShooting.app"
+            BlueprintName = "CircleShooting"
+            ReferencedContainer = "container:CircleShooting.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

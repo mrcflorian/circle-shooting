@@ -1,6 +1,6 @@
 //
-//  LineShootUITests.swift
-//  LineShootUITests
+//  CircleShootingUITests.swift
+//  CircleShootingUITests
 //
 //  Created by Florian Marcu on 9/25/16.
 //  Copyright © 2016 Florian Marcu. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class LineShootUITests: XCTestCase {
+class CircleShootingUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

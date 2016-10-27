@@ -1,15 +1,15 @@
 //
-//  LineShootTests.swift
-//  LineShootTests
+//  CircleShootingTests.swift
+//  CircleShootingTests
 //
 //  Created by Florian Marcu on 9/25/16.
 //  Copyright © 2016 Florian Marcu. All rights reserved.
 //
 
 import XCTest
-@testable import LineShoot
+@testable import CircleShooting
 
-class LineShootTests: XCTestCase {
+class CircleShootingTests: XCTestCase {
     
     func testGameLevelIncrements() {
         var game = Game()

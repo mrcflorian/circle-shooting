@@ -12,7 +12,7 @@
 		170140A31D985AFE006CBEE5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170140A21D985AFE006CBEE5 /* GameViewController.swift */; };
 		170140A81D985AFE006CBEE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 170140A71D985AFE006CBEE5 /* Assets.xcassets */; };
 		170140B61D985AFE006CBEE5 /* LineShootTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170140B51D985AFE006CBEE5 /* LineShootTests.swift */; };
-		170140C11D985AFE006CBEE5 /* LineShootUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170140C01D985AFE006CBEE5 /* LineShootUITests.swift */; };
+		170140C11D985AFE006CBEE5 /* CircleShootingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170140C01D985AFE006CBEE5 /* CircleShootingUITests.swift */; };
 		1716D1701DC2857D00571B9A /* LandingGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716D16F1DC2857D00571B9A /* LandingGameScene.swift */; };
 		17A0E24A1DB9790300F389D7 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A0E2491DB9790300F389D7 /* ScoreManager.swift */; };
 		17DD9BA61DAC927C00EE087F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DD9BA51DAC927C00EE087F /* Game.swift */; };
@@ -41,17 +41,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		170140991D985AFE006CBEE5 /* LineShoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LineShoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		170140991D985AFE006CBEE5 /* CircleShooting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleShooting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1701409C1D985AFE006CBEE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		170140A01D985AFE006CBEE5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		170140A21D985AFE006CBEE5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		170140A71D985AFE006CBEE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		170140AC1D985AFE006CBEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		170140B11D985AFE006CBEE5 /* LineShootTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LineShootTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		170140B11D985AFE006CBEE5 /* CircleShootingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleShootingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		170140B51D985AFE006CBEE5 /* LineShootTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineShootTests.swift; sourceTree = "<group>"; };
 		170140B71D985AFE006CBEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		170140BC1D985AFE006CBEE5 /* LineShootUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LineShootUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		170140C01D985AFE006CBEE5 /* LineShootUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineShootUITests.swift; sourceTree = "<group>"; };
+		170140BC1D985AFE006CBEE5 /* CircleShootingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleShootingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		170140C01D985AFE006CBEE5 /* CircleShootingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleShootingUITests.swift; sourceTree = "<group>"; };
 		170140C21D985AFE006CBEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1716D16F1DC2857D00571B9A /* LandingGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingGameScene.swift; sourceTree = "<group>"; };
 		17A0E2491DB9790300F389D7 /* ScoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		170140901D985AFE006CBEE5 = {
 			isa = PBXGroup;
 			children = (
-				1701409B1D985AFE006CBEE5 /* LineShoot */,
+				1701409B1D985AFE006CBEE5 /* CircleShooting */,
 				170140B41D985AFE006CBEE5 /* LineShootTests */,
 				170140BF1D985AFE006CBEE5 /* LineShootUITests */,
 				1701409A1D985AFE006CBEE5 /* Products */,
@@ -107,14 +107,14 @@
 		1701409A1D985AFE006CBEE5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				170140991D985AFE006CBEE5 /* LineShoot.app */,
-				170140B11D985AFE006CBEE5 /* LineShootTests.xctest */,
-				170140BC1D985AFE006CBEE5 /* LineShootUITests.xctest */,
+				170140991D985AFE006CBEE5 /* CircleShooting.app */,
+				170140B11D985AFE006CBEE5 /* CircleShootingTests.xctest */,
+				170140BC1D985AFE006CBEE5 /* CircleShootingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1701409B1D985AFE006CBEE5 /* LineShoot */ = {
+		1701409B1D985AFE006CBEE5 /* CircleShooting */ = {
 			isa = PBXGroup;
 			children = (
 				1701409C1D985AFE006CBEE5 /* AppDelegate.swift */,
@@ -128,7 +128,7 @@
 				17A0E2491DB9790300F389D7 /* ScoreManager.swift */,
 				1716D16F1DC2857D00571B9A /* LandingGameScene.swift */,
 			);
-			path = LineShoot;
+			path = CircleShooting;
 			sourceTree = "<group>";
 		};
 		170140B41D985AFE006CBEE5 /* LineShootTests */ = {
@@ -137,24 +137,26 @@
 				170140B51D985AFE006CBEE5 /* LineShootTests.swift */,
 				170140B71D985AFE006CBEE5 /* Info.plist */,
 			);
-			path = LineShootTests;
+			name = LineShootTests;
+			path = CircleShootingTests;
 			sourceTree = "<group>";
 		};
 		170140BF1D985AFE006CBEE5 /* LineShootUITests */ = {
 			isa = PBXGroup;
 			children = (
-				170140C01D985AFE006CBEE5 /* LineShootUITests.swift */,
+				170140C01D985AFE006CBEE5 /* CircleShootingUITests.swift */,
 				170140C21D985AFE006CBEE5 /* Info.plist */,
 			);
-			path = LineShootUITests;
+			name = LineShootUITests;
+			path = CircleShootingUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		170140981D985AFE006CBEE5 /* LineShoot */ = {
+		170140981D985AFE006CBEE5 /* CircleShooting */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 170140C51D985AFE006CBEE5 /* Build configuration list for PBXNativeTarget "LineShoot" */;
+			buildConfigurationList = 170140C51D985AFE006CBEE5 /* Build configuration list for PBXNativeTarget "CircleShooting" */;
 			buildPhases = (
 				170140951D985AFE006CBEE5 /* Sources */,
 				170140961D985AFE006CBEE5 /* Frameworks */,
@@ -165,14 +167,14 @@
 			);
 			dependencies = (
 			);
-			name = LineShoot;
+			name = CircleShooting;
 			productName = LineShoot;
-			productReference = 170140991D985AFE006CBEE5 /* LineShoot.app */;
+			productReference = 170140991D985AFE006CBEE5 /* CircleShooting.app */;
 			productType = "com.apple.product-type.application";
 		};
-		170140B01D985AFE006CBEE5 /* LineShootTests */ = {
+		170140B01D985AFE006CBEE5 /* CircleShootingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 170140C81D985AFE006CBEE5 /* Build configuration list for PBXNativeTarget "LineShootTests" */;
+			buildConfigurationList = 170140C81D985AFE006CBEE5 /* Build configuration list for PBXNativeTarget "CircleShootingTests" */;
 			buildPhases = (
 				170140AD1D985AFE006CBEE5 /* Sources */,
 				170140AE1D985AFE006CBEE5 /* Frameworks */,
@@ -183,14 +185,14 @@
 			dependencies = (
 				170140B31D985AFE006CBEE5 /* PBXTargetDependency */,
 			);
-			name = LineShootTests;
+			name = CircleShootingTests;
 			productName = LineShootTests;
-			productReference = 170140B11D985AFE006CBEE5 /* LineShootTests.xctest */;
+			productReference = 170140B11D985AFE006CBEE5 /* CircleShootingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		170140BB1D985AFE006CBEE5 /* LineShootUITests */ = {
+		170140BB1D985AFE006CBEE5 /* CircleShootingUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 170140CB1D985AFE006CBEE5 /* Build configuration list for PBXNativeTarget "LineShootUITests" */;
+			buildConfigurationList = 170140CB1D985AFE006CBEE5 /* Build configuration list for PBXNativeTarget "CircleShootingUITests" */;
 			buildPhases = (
 				170140B81D985AFE006CBEE5 /* Sources */,
 				170140B91D985AFE006CBEE5 /* Frameworks */,
@@ -201,9 +203,9 @@
 			dependencies = (
 				170140BE1D985AFE006CBEE5 /* PBXTargetDependency */,
 			);
-			name = LineShootUITests;
+			name = CircleShootingUITests;
 			productName = LineShootUITests;
-			productReference = 170140BC1D985AFE006CBEE5 /* LineShootUITests.xctest */;
+			productReference = 170140BC1D985AFE006CBEE5 /* CircleShootingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -233,7 +235,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 170140941D985AFE006CBEE5 /* Build configuration list for PBXProject "LineShoot" */;
+			buildConfigurationList = 170140941D985AFE006CBEE5 /* Build configuration list for PBXProject "CircleShooting" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -246,9 +248,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				170140981D985AFE006CBEE5 /* LineShoot */,
-				170140B01D985AFE006CBEE5 /* LineShootTests */,
-				170140BB1D985AFE006CBEE5 /* LineShootUITests */,
+				170140981D985AFE006CBEE5 /* CircleShooting */,
+				170140B01D985AFE006CBEE5 /* CircleShootingTests */,
+				170140BB1D985AFE006CBEE5 /* CircleShootingUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -322,7 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				170140C11D985AFE006CBEE5 /* LineShootUITests.swift in Sources */,
+				170140C11D985AFE006CBEE5 /* CircleShootingUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,12 +333,12 @@
 /* Begin PBXTargetDependency section */
 		170140B31D985AFE006CBEE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 170140981D985AFE006CBEE5 /* LineShoot */;
+			target = 170140981D985AFE006CBEE5 /* CircleShooting */;
 			targetProxy = 170140B21D985AFE006CBEE5 /* PBXContainerItemProxy */;
 		};
 		170140BE1D985AFE006CBEE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 170140981D985AFE006CBEE5 /* LineShoot */;
+			target = 170140981D985AFE006CBEE5 /* CircleShooting */;
 			targetProxy = 170140BD1D985AFE006CBEE5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -436,9 +438,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = LineShoot/Info.plist;
+				INFOPLIST_FILE = CircleShooting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FMTech.LineShoot;
+				PRODUCT_BUNDLE_IDENTIFIER = FMTech.CircleShooting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -453,9 +455,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = LineShoot/Info.plist;
+				INFOPLIST_FILE = CircleShooting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FMTech.LineShoot;
+				PRODUCT_BUNDLE_IDENTIFIER = FMTech.CircleShooting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -466,12 +468,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				INFOPLIST_FILE = LineShootTests/Info.plist;
+				INFOPLIST_FILE = CircleShootingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FMTech.LineShootTests;
+				PRODUCT_BUNDLE_IDENTIFIER = FMTech.CircleShootingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LineShoot.app/LineShoot";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircleShooting.app/CircleShooting";
 			};
 			name = Debug;
 		};
@@ -479,12 +481,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = LineShootTests/Info.plist;
+				INFOPLIST_FILE = CircleShootingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FMTech.LineShootTests;
+				PRODUCT_BUNDLE_IDENTIFIER = FMTech.CircleShootingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LineShoot.app/LineShoot";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircleShooting.app/CircleShooting";
 			};
 			name = Release;
 		};
@@ -492,31 +494,31 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				INFOPLIST_FILE = LineShootUITests/Info.plist;
+				INFOPLIST_FILE = CircleShootingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FMTech.LineShootUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = FMTech.CircleShootingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = LineShoot;
+				TEST_TARGET_NAME = CircleShooting;
 			};
 			name = Debug;
 		};
 		170140CD1D985AFE006CBEE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = LineShootUITests/Info.plist;
+				INFOPLIST_FILE = CircleShootingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FMTech.LineShootUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = FMTech.CircleShootingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = LineShoot;
+				TEST_TARGET_NAME = CircleShooting;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		170140941D985AFE006CBEE5 /* Build configuration list for PBXProject "LineShoot" */ = {
+		170140941D985AFE006CBEE5 /* Build configuration list for PBXProject "CircleShooting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				170140C31D985AFE006CBEE5 /* Debug */,
@@ -525,7 +527,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		170140C51D985AFE006CBEE5 /* Build configuration list for PBXNativeTarget "LineShoot" */ = {
+		170140C51D985AFE006CBEE5 /* Build configuration list for PBXNativeTarget "CircleShooting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				170140C61D985AFE006CBEE5 /* Debug */,
@@ -534,7 +536,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		170140C81D985AFE006CBEE5 /* Build configuration list for PBXNativeTarget "LineShootTests" */ = {
+		170140C81D985AFE006CBEE5 /* Build configuration list for PBXNativeTarget "CircleShootingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				170140C91D985AFE006CBEE5 /* Debug */,
@@ -543,7 +545,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		170140CB1D985AFE006CBEE5 /* Build configuration list for PBXNativeTarget "LineShootUITests" */ = {
+		170140CB1D985AFE006CBEE5 /* Build configuration list for PBXNativeTarget "CircleShootingUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				170140CC1D985AFE006CBEE5 /* Debug */,
