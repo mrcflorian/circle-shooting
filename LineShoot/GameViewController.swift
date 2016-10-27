@@ -72,8 +72,6 @@ class GameViewController: UIViewController {
     }
 
     func gameOver() {
-        //let gameOverVC = GameOverViewController(gameController: scene?.gameController)
-        //self.presentingViewController?.present(gameOverVC, animated: false, completion:nil)
         self.dismiss(animated: false, completion: nil)
     }
 
