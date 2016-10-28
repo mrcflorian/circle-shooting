@@ -20,6 +20,7 @@ let kScoreLabelHeight: CGFloat = 18.0
 let kScoreLabelFontSize: CGFloat = 14
 let kScoreLabelFontFamily = "Marion-Bold"
 let kScoreLabelRightMargin: CGFloat = 20
+let kScoreLabelTopMargin: CGFloat = 50
 let kSceneViewPadding: CGFloat = 80.0
 
 class LandingViewController: UIViewController
@@ -80,7 +81,7 @@ class LandingViewController: UIViewController
         super.viewWillLayoutSubviews()
         playButton.frame = CGRect(x: self.view.bounds.midX - kPlayButtonSize.width / 2, y: self.view.bounds.midY - kPlayButtonSize.height, width: kPlayButtonSize.width, height: kPlayButtonSize.height)
 
-        lastScoreLabel.frame = CGRect(x: 0.0, y: 0.0, width: self.view.bounds.width - kScoreLabelRightMargin, height: kScoreLabelHeight)
+        lastScoreLabel.frame = CGRect(x: 0.0, y: kScoreLabelTopMargin, width: self.view.bounds.width - kScoreLabelRightMargin, height: kScoreLabelHeight)
         highScoreLabel.frame = CGRect(x: lastScoreLabel.frame.minX, y: lastScoreLabel.frame.maxY, width: lastScoreLabel.frame.width, height: lastScoreLabel.frame.height)
         let playBtnFrame = playButton.frame
         sceneView.frame = CGRect(x: playBtnFrame.minX - kSceneViewPadding, y: playBtnFrame.minY - kSceneViewPadding, width: playBtnFrame.width + 2 * kSceneViewPadding, height: playBtnFrame.height + 2 * kSceneViewPadding)
