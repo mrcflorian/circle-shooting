@@ -21,6 +21,7 @@
 		17E354EA1DC06113005F83C4 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E354E81DC06113005F83C4 /* Fabric.framework */; };
 		17E354EB1DC06113005F83C4 /* GameAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E354E91DC06113005F83C4 /* GameAnalytics.framework */; };
 		17E354ED1DC063AF005F83C4 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E354EC1DC063AF005F83C4 /* Crashlytics.framework */; };
+		17E887591DC2E1470079015A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E887581DC2E1470079015A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		17E354E81DC06113005F83C4 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		17E354E91DC06113005F83C4 /* GameAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GameAnalytics.framework; sourceTree = "<group>"; };
 		17E354EC1DC063AF005F83C4 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		17E887581DC2E1470079015A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				17DD9BAB1DADBEFE00EE087F /* LandingViewController.swift */,
 				17A0E2491DB9790300F389D7 /* ScoreManager.swift */,
 				1716D16F1DC2857D00571B9A /* LandingGameScene.swift */,
+				17E887581DC2E1470079015A /* LaunchScreen.storyboard */,
 			);
 			path = CircleShooting;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				170140A81D985AFE006CBEE5 /* Assets.xcassets in Resources */,
+				17E887591DC2E1470079015A /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
