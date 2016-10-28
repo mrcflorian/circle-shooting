@@ -136,7 +136,7 @@ class GameScene: SKScene {
         guard let projectile = projectile, let gameController = gameController, let track = track else {
             return false
         }
-        return projectile.position.y > track.position.y + kBigCircleRadius + gameController.monsterRadius() + 10.0
+        return projectile.position.y > track.position.y + kBigCircleRadius + gameController.monsterRadius() + 50.0
     }
 
     private func midScreenPoint() -> CGPoint {
