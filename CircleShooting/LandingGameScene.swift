@@ -8,8 +8,8 @@
 
 import SpriteKit
 
-let kTrackRadius: CGFloat = 90.0
-let kMonsterRadius: CGFloat = 10.0
+let kTrackRadius: CGFloat = 120.0
+let kMonsterRadius: CGFloat = 15.0
 
 class LandingGameScene: SKScene {
 
